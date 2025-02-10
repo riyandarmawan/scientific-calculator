@@ -46,7 +46,7 @@ function calculate() {
         'sin': 'Math.sin',
         'cos': 'Math.cos',
         'tan': 'Math.tan',
-        'log': 'Math.log',
+        'log': 'Math.log10' in Math ? 'Math.log10' : '(x => Math.log(x) / Math.LN10)',
         '√': 'Math.sqrt',
         'π': 'Math.PI',
         'e': 'Math.E',
